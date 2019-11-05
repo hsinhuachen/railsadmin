@@ -29,8 +29,7 @@ $(function(){
     productShow();
 
     $("#projects").isotope({
-      itemSelector: '.project-item',
-      layoutMode: 'fitRows'
+      itemSelector: '.project-item'
     })
 
     $(".gotop").on('click', function(event) {
