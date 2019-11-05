@@ -32,9 +32,9 @@
 	<hr class="clear">
 	<div class="control hidden-xs">
 		<div class="row">
-			<%= link_to content_tag(:span,'Previous project'), @post.previous, class: 'col-xs-3' %>
-			<%= link_to content_tag(:span,'Back'), projects_path, class: 'col-xs-6 text-center' %>
-			<%= link_to content_tag(:span,'Next project'), @post.next, class: 'col-xs-3 text-right'  %>
+			<%= link_to content_tag(:span,'Previous project'), @post.previous, class: 'col-xs-3', :data => { :turbolinks => 'false' } %>
+			<%= link_to content_tag(:span,'Back'), projects_path, class: 'col-xs-6 text-center', :data => { :turbolinks => 'false' } %>
+			<%= link_to content_tag(:span,'Next project'), @post.next, class: 'col-xs-3 text-right', :data => { :turbolinks => 'false' }  %>
 		</div>
 	</div> <!-- /control -->
 

@@ -64,11 +64,11 @@ class Project < ApplicationRecord
 	end
 
 	def previous
-	  Project.where(["sorting < ?", sorting]).where(published: true).last
+	  Project.where(["sorting < ?", sorting]).where(published: true).first
 	end
 
 	def next
-	  Project.where(["sorting > ?", sorting]).where(published: true).first
+	  Project.where(["sorting > ?", sorting]).where(published: true).last
 	end
 
 	# export to csv

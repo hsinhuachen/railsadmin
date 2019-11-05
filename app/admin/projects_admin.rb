@@ -97,7 +97,7 @@ Trestle.resource(:projects) do
     end
 
     sidebar do
-      form_group :thumb, label: "作品縮圖", help: "圖片尺寸 1920x1080px" do
+      form_group :thumb, label: "作品縮圖", help: "圖片尺寸 710x400px" do
         concat content_tag(:div, nil, class: "previewimg", id: "thumbpreview"){ 
           concat image_tag(project.thumb.url, class: "thumbimg") if project.thumb.url
         }

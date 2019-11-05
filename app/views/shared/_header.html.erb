@@ -6,16 +6,13 @@
   %>
 
   <nav id="mainNav" class="navbar navbar-expand-lg">
-    <%= link_to image_tag("onion_logo_b.svg", alt: "Onion Design Associates | 洋蔥設計", class: "svgimg logo"), root_path, class: "navbar-brand", :data => { :turbolinks => "true"} %>
+    <%= link_to image_tag("onion_logo_2019.svg", alt: "Onion Design Associates | 洋蔥設計", class: "svgimg logo"), root_path, class: "navbar-brand", :data => { :turbolinks => "true"} %>
 
 
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item">
         <% class_name = current_page?(projects_path) ? 'nav-link active' : 'nav-link' %>
         <%= link_to "WORK", projects_path, :class => class_name %>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link btn-list">CLIENT</a>
       </li>
       <li class="nav-item">
         <a class="nav-link btn-list">ABOUT</a>
