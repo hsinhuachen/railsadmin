@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_071657) do
+ActiveRecord::Schema.define(version: 2019_11_05_042142) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email"
@@ -74,11 +74,7 @@ ActiveRecord::Schema.define(version: 2019_08_29_071657) do
     t.index ["tag_id"], name: "index_taggings_on_tag_id"
   end
 
-  create_table "tags", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "sorting"
-  end
+# Could not dump table "tags" because of following StandardError
+#   Unknown type 'boolite' for column 'publish'
 
 end
