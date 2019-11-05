@@ -28,6 +28,11 @@ $(function(){
 
     productShow();
 
+    $("#projects").isotope({
+      itemSelector: '.project-item',
+      layoutMode: 'fitRows'
+    })
+
     $(".gotop").on('click', function(event) {
         $("body,html").animate({
           scrollTop: 0,

@@ -15,14 +15,14 @@
 
     
     <div class="abs-top abs-right">
-      <%= link_to "Info", '#', :class => class_name %>
-      /
+      <%= link_to "INFO", '#', :class => class_name %>
+      
       <%=
-        if I18n.locale == :en
-          link_to "中", {:controller => controller_name, :action => action_name, :locale => "zh-TW"}, class: "nav-link btn-list"
-        else
-          link_to "EN", {:controller => controller_name, :action => action_name, :locale => "en"}, class: "nav-link btn-list"
-        end
+        # if I18n.locale == :en
+        #   link_to "中", {:controller => controller_name, :action => action_name, :locale => "zh-TW"}, class: "nav-link btn-list"
+        # else
+        #   link_to "EN", {:controller => controller_name, :action => action_name, :locale => "en"}, class: "nav-link btn-list"
+        # end
       %>
     </div>
   </nav>

@@ -80,11 +80,11 @@ a:focus{
 
 .nav-link{
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: #FFFFFF;
-	font-size: 2.0rem;
-	letter-spacing: 2.5px;
-	line-height: 100%;		
+	font-size: 1.4rem;
+	line-height: 121%;
+	letter-spacing: 0.2em;	
 }
 
 .logo{
@@ -138,6 +138,13 @@ a:focus{
 .abs-right{
 	right: 75px;
 }
+
+@media screen and (max-width: 991px) {
+	.abs-right{
+		right: 0px;
+	}
+}
+
 
 @media screen and (max-width: 767px){
 	.navbar {
