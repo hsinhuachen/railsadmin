@@ -16,3 +16,4 @@ Style/Encoding:
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
+  

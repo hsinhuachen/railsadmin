@@ -5,27 +5,25 @@
   end
   %>
 
-  <nav id="mainNav" class="navbar navbar-expand-lg">
+  <nav id="mainNav" class="navbar">
     <%= link_to image_tag("onion_logo_2019.svg", alt: "Onion Design Associates | 洋蔥設計", class: "svgimg logo"), root_path, class: "navbar-brand", :data => { :turbolinks => "true"} %>
+    
+    <% class_name = current_page?(projects_path) ? 'nav-link active' : 'nav-link' %>
+    <div class="abs-top">
+      <%= link_to "WORK", projects_path, :class => class_name %>
+    </div>
 
-
-    <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item">
-        <% class_name = current_page?(projects_path) ? 'nav-link active' : 'nav-link' %>
-        <%= link_to "WORK", projects_path, :class => class_name %>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link btn-list">ABOUT</a>
-      </li>
-      <li class="nav-item">
-        <%=
-          if I18n.locale == :en
-            link_to "中", {:controller => controller_name, :action => action_name, :locale => "zh-TW"}, class: "nav-link btn-list"
-          else
-            link_to "EN", {:controller => controller_name, :action => action_name, :locale => "en"}, class: "nav-link btn-list"
-          end
-        %>
-      </li>
-    </ul>
+    
+    <div class="abs-top abs-right">
+      <%= link_to "Info", '#', :class => class_name %>
+      /
+      <%=
+        if I18n.locale == :en
+          link_to "中", {:controller => controller_name, :action => action_name, :locale => "zh-TW"}, class: "nav-link btn-list"
+        else
+          link_to "EN", {:controller => controller_name, :action => action_name, :locale => "en"}, class: "nav-link btn-list"
+        end
+      %>
+    </div>
   </nav>
 </header>
