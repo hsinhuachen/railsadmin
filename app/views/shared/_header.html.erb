@@ -9,7 +9,7 @@
     <%= link_to image_tag("onion_logo_2019.svg", alt: "Onion Design Associates | 洋蔥設計", class: "svgimg logo"), root_path, class: "navbar-brand", :data => { :turbolinks => "true"} %>
     
     <% class_name = current_page?(projects_path) ? 'nav-link active' : 'nav-link' %>
-    <div class="abs-top">
+    <div class="abs-top abs-left">
       <%= link_to "WORK", projects_path, :class => class_name %>
     </div>
 

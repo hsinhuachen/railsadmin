@@ -27,7 +27,23 @@
 
 @media screen and (max-width: 767px) {
 	#footer{
+		text-align: center;
 		padding-left: 15px;
 		padding-right: 15px;
+		.text-right{
+			text-align: center;
+		}
+		.col-md-6{
+			margin: 0;
+		}
+	}
+
+	#footer p, .social a{
+		font-size: 1.7rem;
+	}
+
+	.social a{
+		padding: 0 5px;
 	}
 }
+
