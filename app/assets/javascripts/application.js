@@ -28,10 +28,6 @@ $(function(){
 
     productShow();
 
-    $("#projects").isotope({
-      itemSelector: '.project-item'
-    })
-
     $(".gotop").on('click', function(event) {
         $("body,html").animate({
           scrollTop: 0,
@@ -80,6 +76,10 @@ $(document).on('turbolinks:load', function(){
     //console.log('show');
     setTimeout(function(){
         $("#home, #projects").addClass('animated fadeIn');
+
+        $("#projects").isotope({
+          itemSelector: '.project-item'
+        });
     },600)
 })   
 
