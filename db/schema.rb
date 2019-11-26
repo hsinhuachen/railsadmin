@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_05_042142) do
+ActiveRecord::Schema.define(version: 2019_11_12_132656) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2019_11_05_042142) do
 
   create_table "galleries", force: :cascade do |t|
     t.string "name"
-    t.integer "sorting"
+    t.integer "sorting", default: 0
     t.integer "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 2019_11_05_042142) do
     t.string "video"
     t.boolean "feature"
     t.boolean "published"
-    t.integer "sorting"
+    t.integer "sorting", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

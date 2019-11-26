@@ -1,19 +1,13 @@
-<div id="full" class="carousel">
-	<div class="carousel-inner slider">
+<div id="full" class="carousel carousel-fade" data-ride="carousel">
+	<div class="carousel-inner">
 	<% @cycle.each do |img| %>
-	  <div class="carousel-item">
+	  <div class="item active">
+	  	<% if img.link? %>
+	  	<%=link_to '', img.link, :target => "_blank", class: "carousel-link" %>
+	  	<% end %>
 	  	<% cycleImg = img.image.url if img.image? %>
 	  	<div class="pic" style="background-image: url('<%= cycleImg %>'); "></div>
 	  </div>
-	  <!-- <div class="carousel-item">
-	  	<div class="pic" style="background-image: url('<%= asset_path("gutenberg.jpg") %>'); "></div>
-	  </div>
-	  <div class="carousel-item">
-	  	<div class="pic" style="background-image: url('<%= asset_path("holdthattiger.jpg") %>'); "></div>
-	  </div>
-	  <div class="carousel-item">
-	  	<div class="pic" style="background-image: url('<%= asset_path("tolaku.jpg") %>'); "></div>
-	  </div> -->
 	<% end %>
 	</div> <!-- /carousel-inner -->
 </div>

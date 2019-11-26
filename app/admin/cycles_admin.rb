@@ -35,6 +35,7 @@ Trestle.resource(:cycles) do
     end
 
     text_field :title, label: "圖片標題"
+    text_field :link, label: "連結"
     text_field :sorting, label: "排序", help: '數字越大越前面', placeholder: 0
   
     row do

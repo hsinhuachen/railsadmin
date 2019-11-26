@@ -17,16 +17,11 @@
 $(function(){
 	svgimg();
 
-    $(".slider").bxSlider({
-        mode: "fade",
-        controls: false,
-        pager: false,
-        auto: true,
-        speed: 800,
-        autoDelay: 4000
-    });
-
     productShow();
+
+    $('.carousel').carousel({
+      interval: 5000
+    })
 
     $(".gotop").on('click', function(event) {
         $("body,html").animate({
@@ -76,6 +71,10 @@ $(document).on('turbolinks:load', function(){
     //console.log('show');
     setTimeout(function(){
         $("#home, #projects").addClass('animated fadeIn');
+
+        $(".homelist").isotope({
+          itemSelector: '.project-item'
+        });
 
         $("#projects").isotope({
           itemSelector: '.project-item'
