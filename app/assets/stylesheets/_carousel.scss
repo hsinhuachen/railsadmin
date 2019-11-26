@@ -1,10 +1,8 @@
 #full{
+  padding: 136px 10px 20px 10px;
 }
 
-.carousel-inner, .carousel-indicators{
-  padding-top: 136px;
-  max-height: 90vh;
-  min-height: 90vh;
+.carousel-inner{
 }
 
 .carousel-link{
@@ -24,12 +22,16 @@
 
 @media screen and (min-width: 768px) {
   .pic{
-    max-height: 90vh;
-    min-height: 90vh;
+    /*height: 636px;*/
+    padding-bottom: 40%;
   }
 }
 
 @media screen and (max-width: 767px) {
+  #full{
+    padding-top: 0;
+  }
+
   .pic{
     padding-bottom: 56.25%;
     height: 0;

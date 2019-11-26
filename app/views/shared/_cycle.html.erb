@@ -1,7 +1,11 @@
 <div id="full" class="carousel carousel-fade" data-ride="carousel">
 	<div class="carousel-inner">
-	<% @cycle.each do |img| %>
+	<% @cycle.each_with_index do |img, index| %>
+	  <% if index == 0 %>
 	  <div class="item active">
+	  <% else %>
+	  <div class="item">
+	  <% end %>
 	  	<% if img.link? %>
 	  	<%=link_to '', img.link, :target => "_blank", class: "carousel-link" %>
 	  	<% end %>
