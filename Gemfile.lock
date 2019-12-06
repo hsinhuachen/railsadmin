@@ -145,7 +145,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     pagy (3.2.1)
     public_suffix (3.0.3)
-    puma (3.12.0)
+    puma (3.12.2)
     rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -273,7 +273,7 @@ DEPENDENCIES
   mini_magick
   mini_racer
   pagy
-  puma (~> 3.11)
+  puma (~> 3.12)
   rails (~> 5.2.2)
   rails-i18n
   sass-rails (~> 5.0)
